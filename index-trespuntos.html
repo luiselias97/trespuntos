@@ -1,0 +1,78 @@
+<html lang="es" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+  <base href="https://www.trespuntoscafe.com/">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.trespuntoscafe.com/dist/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./dist/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./dist/favicon-16x16.png">
+  <link rel="manifest" href="./dist/manifest.json">
+  <link rel="mask-icon" href="./dist/safari-pinned-tab.svg" color="#231f20"> 
+  <meta name="theme-color" content="#fad700">
+  <meta name="application-name" content="Tres Puntos Café">
+  <title>Tres Puntos Café</title>
+  <script src="./dist/pace.min.js"></script>
+  <style>
+    /* This is a compiled file, you should be editing the file in the templates directory */
+    .pace {
+      -webkit-pointer-events: none;
+      pointer-events: none;
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .pace-inactive {
+      display: none;
+    }
+
+    .pace .pace-progress {
+      background: #231F20;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      /* right: 100%; */
+      width: 100%;
+      height: 2px;
+    }
+    .loading {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+      background-color: #FAD700;
+      z-index: 150;
+      overflow: hidden;
+      left: 0px;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      document.getElementById('loading').style.visibility = 'hidden'
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108193076-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+
+</head>
+<body>
+  <div id="loading" class="loading">
+    <img src="https://d33wubrfki0l68.cloudfront.net/ed6408d984e0e7189de5d300eca56318894c1f29/fa983/dist/cargando.gif" alt="Tres Puntos Café">
+  </div>
+  <ui-view name="menu"></ui-view>
+     <ui-view name="content" class="ng-scope"><div id="homeContent" class="ng-scope"> <div id="homeBg" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative; pointer-events: none;"> <img src="https://www.trespuntoscafe.com/dist/bf16e48daaca4c08975784f572d01fcf.png" alt="Tres Puntos Café" data-depth="0.1" style="transform: translate3d(2px, -5.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"> <img src="https://www.trespuntoscafe.com/dist/7272feee5cc1d20ca6047199aba0e5df.png" alt="Tres Puntos Café" data-depth="0.3" style="transform: translate3d(6.1px, -17.6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <img src="https://www.trespuntoscafe.com/dist/8cdf44fe711f232bae2fd4f9cf6fdcc1.png" alt="Tres Puntos Café" data-depth="0.4" style="transform: translate3d(8.1px, -23.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <img src="https://www.trespuntoscafe.com/dist/d31317eb10fe948f67064dfea0cd4adc.png" alt="Tres Puntos Café" data-depth="0.7" class="tag" style="transform: translate3d(14.1px, -41.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <img src="https://www.trespuntoscafe.com/dist/d92717bf1469a977834157e500912457.png" alt="Tres Puntos Café" data-depth="1" style="transform: translate3d(20.2px, -58.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <img src="https://www.trespuntoscafe.com/dist/1119291655eb96449a603ac45bbde07b.png" alt="Tres Puntos Café" data-depth="1.2" style="transform: translate3d(24.2px, -70.6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <img src="https://www.trespuntoscafe.com/dist/11c824eb63db8164cf1648870307bc0e.png" alt="Tres Puntos Café" data-depth="1.3" style="transform: translate3d(26.3px, -76.4px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> </div> </div> 
+  </ui-view>
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>
